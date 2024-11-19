@@ -68,8 +68,7 @@ Uma aplicação web desenvolvida para gerenciamento de estoque, registro de prod
 ---
 
 ## **Hospedagem**
-- Este aplicativo está atualmente hospedado na Vercel. Acesse a versão online do aplicativo clicando <a href="https://quantumsheet.vercel.app/" target="_blank">aqui.</a>
-
+- Este aplicativo está atualmente hospedado na Vercel. Acesse a versão online do aplicativo clicando [aqui.](https://quantumsheet.vercel.app/)
 ---
 
 ## **Melhorias Futuras**
