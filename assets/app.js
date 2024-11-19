@@ -103,11 +103,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    window.addEventListener('beforeunload', (event) => {
+    /*window.addEventListener('beforeunload', (event) => {
         if (items.length > 0) {         
             event.preventDefault(); 
             event.returnValue = confirmationMessage; 
             return confirmationMessage; 
         }
-    });
+    });*/
+
+    document.addEventListener('click', (event) => {
+    if (items.length > 0) {
+        const target = event.target.closest('a');
+        if (target && target.href) {
+            event.preventDefault(); // Impede a navegação
+            const confirmLeave = confirm("Você tem alterações não salvas. Tem certeza de que deseja sair?");
+            if (confirmLeave) {
+                window.location.href = target.href; // Força a navegação caso o usuário confirme
+            }
+        }
+    }
 });
