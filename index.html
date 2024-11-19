@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/QuantoSheet.png" type="image/x-icon">
+    <title>QuantumSheet</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Controle de Produtos</h1>
+
+        <div class="main-content">
+            <!-- Esquerda - Formulário -->
+            <div class="form-side">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="product">Produto:</label>
+                        <input type="text" id="product" name="product" placeholder="Digite o tipo de produto..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="Digite a quantidade..." step="0.01" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Valor Unitário:</label>
+                        <input type="number" id="price" name="price" step="0.01" placeholder="Digite o valor unitário..." required>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Adicionar</button>
+                        <button id="downloadExcel" type="button">Baixar Arquivo</button>
+                      <!--<button id="downloadPDF" type="button">Baixar PDF</button>-->
+                    </div>
+                </form>
+                
+                <div class="total-value">
+                    <label for="totalValue">Valor Total de Todos os Itens R$:</label>
+                    <input type="text" id="totalValue" readonly>
+                </div>
+
+                <!-- Campo de busca para filtrar produtos -->
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Buscar produto...">
+                    <button type="submit">Buscar / Voltar</button>
+                </form>
+                
+            </div>
+
+            <!-- Direita - Itens Adicionados -->
+            <div class="items-side">
+                <h2>Adicionados recentemente:</h2>
+                <ul id="itemList"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./assets/app.js"></script>
+
+    <footer class="rodape">
+        <div>
+            <img src="./assets/QuantoSheet_2.png" alt="QuantumSheet" class="rodape-imagem">
+            <a class="rodape__link" href="https://portfolioglauciocavalcanti.vercel.app/" target="_blank" rel="noopener noreferrer">Desenvovido por Glaucio Cavalcanti.</a>
+        </div>
+    </footer>
+
+</body>
+</html>
