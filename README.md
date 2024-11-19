@@ -52,7 +52,6 @@ Uma aplicação web desenvolvida para gerenciamento de estoque, registro de prod
 
 - Navegador atualizado (compatível com Chrome, Edge, Firefox ou Safari).
 - Servidor de hospedagem (opcional, para uso na web) como [Vercel](https://vercel.com).
-- Link de acesso On-line: https://quantumsheet.vercel.app/
 
 ### **Passos de Instalação**
 
@@ -69,7 +68,7 @@ Uma aplicação web desenvolvida para gerenciamento de estoque, registro de prod
 ---
 
 ## **Hospedagem**
-- Este aplicativo está atualmente hospedado na Vercel. Acesse a versão online do aplicativo clicando aqui.
+- Este aplicativo está atualmente hospedado na Vercel. Acesse a versão online do aplicativo clicando <a href="https://quantumsheet.vercel.app/" target="_blank">aqui.</a>
 
 ---
 
