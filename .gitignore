@@ -1,0 +1,18 @@
+# Dependências do Node (caso utilize futuramente)
+node_modules/
+package-lock.json
+
+# Arquivos e pastas temporárias de Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e scripts temporários
+*.log
+scratch/
+.system_generated/
+
+# Ambientes virtuais Python
+venv/
+.venv/
+__pycache__/
