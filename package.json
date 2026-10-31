@@ -1,0 +1,9 @@
+{
+  "name": "quantumsheet",
+  "version": "2.1.1",
+  "private": true,
+  "description": "Controle de Produtos e Lista de Compras",
+  "engines": {
+    "node": ">=22.x"
+  }
+}
